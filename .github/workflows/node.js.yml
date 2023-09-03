@@ -35,4 +35,5 @@ jobs:
         cache-dependency-path: src/package-lock.json
     - run: npm ci
     - run: npm run build --if-present
-    - run: npm test
+    # FIXME there are no tests for now
+    # - run: npm test
