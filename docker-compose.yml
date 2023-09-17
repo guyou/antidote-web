@@ -14,6 +14,7 @@ services:
       dockerfile: ./hack/Dockerfile-dev
     environment:
       WEBSSH2_LOCATION: 'http://127.0.0.1:8081'
+      ACORE_LOCATION: 'http://127.0.0.1:8086'
     ports:
       - "8080:80"
   # WebSSH2 is also required for terminal functionality - provides a websocket-to-ssh proxy for the front-end

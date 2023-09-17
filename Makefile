@@ -19,7 +19,6 @@ docker: templates
 	docker build --no-cache -t antidotelabs/antidote-web:$(TARGET_VERSION) -f Dockerfile .
 	docker push antidotelabs/antidote-web:$(TARGET_VERSION)
 
-hack: export ANTIDOTE_WEB_ENV = mock
 hack: templates
 
 	# Just to make sure we pick up the latest for this at dev time
