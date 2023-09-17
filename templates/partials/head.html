@@ -20,7 +20,8 @@
   gtag('config', 'UA-157122383-1');
 </script>
 <script>
-  window.ENVIRONMENT = "{{ env['ANTIDOTE_WEB_ENV'] or 'production' }}";
+  window.ACORE_LOCATION = ""; // DO NOT TOUCH - see antidote-web docker container launch script.
+  window.SERVICE_LOCATION = ""; // DO NOT TOUCH - see antidote-web docker container launch script.
   window.COMMIT_HASH = "{{ antidote_version }}";
   window.WEBSSH2_LOCATION = ""; // DO NOT TOUCH - see antidote-web docker container launch script.
 </script>
